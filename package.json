@@ -31,5 +31,8 @@
     "build": "gatsby build",
     "serve": "gatsby build && gatsby serve",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
