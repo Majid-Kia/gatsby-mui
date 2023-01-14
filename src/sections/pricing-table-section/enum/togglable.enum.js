@@ -1,4 +1,0 @@
-export default {
-  APPLICABLE: 'APPLICABLE',
-  NOT_APPLICABLE: 'NOT_APPLICABLE',
-};
