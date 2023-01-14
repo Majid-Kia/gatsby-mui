@@ -56,9 +56,7 @@ export default function DefaultLayout({ children }) {
               window.dataLayer.push({ 'gtm.start': new Date().getTime(), 'event': 'gtm.js' })
             `}
           </Script> */}
-      {/* <WindowSizeProviderContext> */}
-      {children}
-      {/* </WindowSizeProviderContext> */}
+      <WindowSizeProviderContext>{children}</WindowSizeProviderContext>
     </React.Fragment>
   );
 }
