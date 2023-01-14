@@ -1,14 +1,14 @@
-import templatesConfig from '../config/templates.config';
-import envUtil from './env.util';
-import stringUtil from './string.util';
+import templatesConfig from "../config/templates.config";
+import envUtil from "./env.util";
+import stringUtil from "./string.util";
 
-const templateTypeConfig = require('../config/templates.config');
+const templateTypeConfig = require("../config/templates.config");
 
 export default {
   getPageLinkByType(templateType, slug, isListing) {
     if (
       [templatesConfig.BLOG, templateTypeConfig.KNOWLEDGE_BASE].includes(
-        templateType,
+        templateType
       )
     ) {
       return this.getPostLinkByType(templateType, slug, isListing);
@@ -16,32 +16,28 @@ export default {
     return `/${slug}/`;
   },
   getPostLinkByType(templateType, slug, isListing) {
-    let blogPostPrefix = '/blog/';
+    let blogPostPrefix = "/blog/";
     if (isListing) {
-      blogPostPrefix = '/';
+      blogPostPrefix = "/";
     }
     return (
       (templateType === templateTypeConfig.KNOWLEDGE_BASE
-        ? '/knowledge-base/'
+        ? "/knowledge-base/"
         : blogPostPrefix) +
       slug +
-      '/'
+      "/"
     );
   },
   getPostsMainPageRoute(templateType) {
     return templateTypeConfig.BLOG === templateType
-      ? '/blog/'
-      : '/knowledge-base/';
+      ? "/blog/"
+      : "/knowledge-base/";
   },
   getWriterLinkById(writerId) {
     return `/author/${writerId}/`;
   },
   isInternal(url) {
-    return (
-      url.indexOf(process.env.GATSBY_SITE_URL) !== -1 ||
-      url.indexOf('https://cloudzy.com') !== -1 ||
-      url.indexOf('https') === -1
-    );
+    return "/";
   },
   isArticle(templateType) {
     return (
@@ -52,23 +48,23 @@ export default {
   normalizeInternalLink(link) {
     const isDev = envUtil.isDevelopment();
     return isDev
-      ? this.normalizeWithPostfix(link, '/')
-      : process.env.GATSBY_SITE_URL + this.normalizeWithPostfix(link, '/');
+      ? this.normalizeWithPostfix(link, "/")
+      : process.env.GATSBY_SITE_URL + this.normalizeWithPostfix(link, "/");
   },
   isFile(url) {
     const fileTypes = [
-      'svg',
-      'webp',
-      'ico',
-      'gif',
-      'jpg',
-      'jpeg',
-      'ttf',
-      'woff',
-      'woff2',
-      'png',
+      "svg",
+      "webp",
+      "ico",
+      "gif",
+      "jpg",
+      "jpeg",
+      "ttf",
+      "woff",
+      "woff2",
+      "png",
     ];
-    return fileTypes.some((type) => url.indexOf(`.${type}`) !== -1);
+    return false;
   },
   normalizeWithPostfix(input, postfix) {
     if (this.isInternal(input) && this.isFile(input)) {
@@ -82,12 +78,12 @@ export default {
     }
     let str;
     if (this.isInternal(input)) {
-      str = input.toLowerCase();
+      str = input;
     } else {
       str = input;
     }
 
-    if (typeof str === 'string' && typeof postfix === 'string') {
+    if (typeof str === "string" && typeof postfix === "string") {
       if (stringUtil._isPostFixAvaileableInInput(str, postfix)) {
         return str;
       } else {
