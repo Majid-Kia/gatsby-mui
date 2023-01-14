@@ -1,6 +1,7 @@
-import React from 'react';
-import WindowSizeProviderContext from '../../context/WindowSizeProvider.context';
-// import { Script } from 'gatsby';
+import React from "react";
+import WindowSizeProviderContext from "../../context/WindowSizeProvider.context";
+
+import { Script } from "gatsby";
 // import {Helmet} from 'react-helmet-async';
 
 export default function DefaultLayout({ children }) {
@@ -25,7 +26,7 @@ export default function DefaultLayout({ children }) {
 
   return (
     <React.Fragment>
-      {/* <Script
+      <Script
         id="first-unique-id"
         strategy="idle"
         dangerouslySetInnerHTML={{
@@ -38,10 +39,10 @@ export default function DefaultLayout({ children }) {
             j.async = true;
             j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
             f.parentNode.insertBefore(j, f);
-          })(window, document, "script", "dataLayer", "${process.env.GATSBY_GTAG}");
+          })(window, document, "script", "dataLayer", "GTM-MJ3RHZR");
           `,
         }}
-      /> */}
+      />
 
       {/* <Script
             id="first-unique-id"
@@ -60,4 +61,4 @@ export default function DefaultLayout({ children }) {
       {/* </WindowSizeProviderContext> */}
     </React.Fragment>
   );
-};
+}
