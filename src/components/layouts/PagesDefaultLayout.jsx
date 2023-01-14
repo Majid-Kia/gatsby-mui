@@ -11,14 +11,14 @@ import PropTypes from "prop-types";
 const PagesDefaultLayout = ({ children, addProgressBar }) => {
   return (
     <DefaultLayout>
-      <NavbarSection />
+      {/* <NavbarSection /> */}
       <Container>{children}</Container>
-      <FooterContainer background="#001E58">
+      {/* <FooterContainer background="#001E58">
         <FooterSection />
       </FooterContainer>
       <FooterContainer background="#001642">
         <SubFooterSection />
-      </FooterContainer>
+      </FooterContainer> */}
       {/* <GdprSection /> */}
     </DefaultLayout>
   );
