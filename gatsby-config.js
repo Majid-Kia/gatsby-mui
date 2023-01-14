@@ -1,43 +1,43 @@
-const path = require('path');
-
+const path = require("path");
 
 module.exports = {
+  pathPrefix: "/gatsby-mui",
   plugins: [
-    'gatsby-plugin-top-layout',
-    'gatsby-plugin-react-helmet',  
-    'gatsby-plugin-mui-emotion',
+    "gatsby-plugin-top-layout",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-mui-emotion",
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
           include: /\.inline\.svg$/,
         },
       },
     },
-    'gatsby-plugin-image',
+    "gatsby-plugin-image",
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          formats: ['auto', 'webp'],
+          formats: ["auto", "webp"],
           quality: 100,
           breakpoints: [600, 1200],
           backgroundColor: `transparent`,
-          placeholder: 'none',
+          placeholder: "none",
         },
       },
     },
-    'gatsby-transformer-sharp',
+    "gatsby-transformer-sharp",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
-        path: path.join(__dirname, 'src', 'images'),
+        name: "images",
+        path: path.join(__dirname, "src", "images"),
       },
-      __key: 'images',
+      __key: "images",
     },
   ],
   siteMetadata: {
-    title: 'My page',
+    title: "My page",
   },
 };
