@@ -31,7 +31,7 @@ export default function Index() {
       <FullWidthContainer pt={pt}>
         <WhyChooseSection />
       </FullWidthContainer>
-      {/* <MapSection pt={pt} /> */}
+      <MapSection pt={pt} />
 
       <MostPopularServicesSection
         pt={pt}
