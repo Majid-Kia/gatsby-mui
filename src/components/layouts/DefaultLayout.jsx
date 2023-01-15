@@ -26,7 +26,7 @@ export default function DefaultLayout({ children }) {
 
   return (
     <React.Fragment>
-      {/* <Script
+      <Script
         id="first-unique-id"
         strategy="idle"
         dangerouslySetInnerHTML={{
@@ -42,7 +42,7 @@ export default function DefaultLayout({ children }) {
           })(window, document, "script", "dataLayer", "GTM-MJ3RHZR");
           `,
         }}
-      /> */}
+      />
 
       {/* <Script
             id="first-unique-id"
