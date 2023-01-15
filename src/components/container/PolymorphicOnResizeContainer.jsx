@@ -1,13 +1,15 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import WindowSizeContext from '../../context/WindowSize.Context';
+// import WindowSizeContext from '../../context/WindowSize.Context';
 
 const PolymorphicOnResizeComponent = ({
   smallModeComponent,
   largeModeComponent,
   breakpoint,
 }) => {
-  const windowSize = useContext(WindowSizeContext) || 1200;
+  // const windowSize = useContext(WindowSizeContext) || 1200;
+  const windowSize = 360;
+
 
   const devices = [
     {
@@ -31,19 +33,19 @@ const PolymorphicOnResizeComponent = ({
     return newMode?.type;
   };
 
-  const [currentType, setCurrentType] = useState(findCurrentType(windowSize));
+  const currentType = findCurrentType(windowSize);
 
-  const changeMode = (newWindowSize) => {
-    const currentDevice = devices.find((device) => device.type === currentType);
-    if (isInRange(newWindowSize, currentDevice.range)) {
-      return;
-    }
-    setCurrentType(findCurrentType(newWindowSize));
-  };
+  // const changeMode = (newWindowSize) => {
+  //   const currentDevice = devices.find((device) => device.type === currentType);
+  //   if (isInRange(newWindowSize, currentDevice.range)) {
+  //     return;
+  //   }
+  //   setCurrentType(findCurrentType(newWindowSize));
+  // };
 
-  useEffect(() => {
-    changeMode(windowSize);
-  }, [windowSize]);
+  // useEffect(() => {
+  //   changeMode(windowSize);
+  // }, [windowSize]);
 
   return (
     <React.Fragment key={currentType}>
