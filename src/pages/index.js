@@ -40,17 +40,6 @@ export default function Index() {
       />
       <TestimonialSection pt={pt} testimonialIds={[1, 2, 4, 5]} />
       <PricingCtaSection pt={pt} data={PricingCtaTempData} />
-
-      {/* <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Gatsby example
-        </Typography>
-        <Link to="/about" color="secondary">
-          Go to the about page
-        </Link>
-        <ProTip />
-        <Copyright />
-      </Box> */}
     </PagesDefaultLayout>
   );
 }
