@@ -1,7 +1,7 @@
 import React from "react";
 // import WindowSizeProviderContext from "../../context/WindowSizeProvider.context";
 
-// import { Script } from "gatsby";
+import { Script } from "gatsby";
 // import {Helmet} from 'react-helmet-async';
 
 export default function DefaultLayout({ children }) {
