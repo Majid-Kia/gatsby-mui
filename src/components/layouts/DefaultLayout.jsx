@@ -1,7 +1,7 @@
 import React from "react";
 import WindowSizeProviderContext from "../../context/WindowSizeProvider.context";
 
-// import { Script } from "gatsby";
+import { Script } from "gatsby";
 // import {Helmet} from 'react-helmet-async';
 
 export default function DefaultLayout({ children }) {
@@ -26,7 +26,7 @@ export default function DefaultLayout({ children }) {
 
   return (
     <React.Fragment>
-      {/* <Script
+      <Script
         id="first-unique-id"
         strategy="idle"
         dangerouslySetInnerHTML={{
@@ -42,7 +42,7 @@ export default function DefaultLayout({ children }) {
           })(window, document, "script", "dataLayer", "GTM-MJ3RHZR");
           `,
         }}
-      /> */}
+      />
 
       {/* <Script
             id="first-unique-id"

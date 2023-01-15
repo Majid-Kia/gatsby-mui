@@ -31,12 +31,13 @@ export default function Index() {
       <FullWidthContainer pt={pt}>
         <WhyChooseSection />
       </FullWidthContainer>
-      {/* <MapSection pt={pt} />
+      <MapSection pt={pt} />
+
       <MostPopularServicesSection
         pt={pt}
         title="Our Most Popular Services"
         data={mostPopularServicesData}
-      /> */}
+      />
       {/* <TestimonialSection pt={pt} testimonialIds={[1, 2, 4, 5]} />*/}
       <PricingCtaSection pt={pt} data={PricingCtaTempData} />
 
