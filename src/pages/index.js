@@ -7,7 +7,7 @@ import React from "react";
 // import Copyright from '../components/Copyright';
 import FullWidthContainer from "../components/container/FullWidthContainer";
 import WhyChooseSection from "../sections/why-choose-section/WhyChooseSection";
-// import MapSection from "../sections/map-section/MapSection";
+import MapSection from "../sections/map-section/MapSection";
 import PagesDefaultLayout from "../components/layouts/PagesDefaultLayout";
 // import PricingTableSection from "../sections/pricing-table-section/PricingTableSection";
 import mostPopularServicesData from "../sections/most-popular-services-sections/data/mostPopularServices.data";
