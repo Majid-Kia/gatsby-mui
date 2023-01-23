@@ -14,15 +14,17 @@
     "@mui/material": "latest",
     "gatsby": "latest",
     "gatsby-plugin-image": "^3.4.0",
-    "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-react-svg": "^3.3.0",
+    "gatsby-plugin-root-import": "^2.0.9",
     "gatsby-plugin-sharp": "^5.4.0",
     "gatsby-source-filesystem": "^5.4.0",
     "gatsby-transformer-sharp": "^5.4.0",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest",
+    "react-helmet-async": "^1.3.0",
     "react-slick": "^0.29.0",
+    "react-svg": "^16.0.0",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {

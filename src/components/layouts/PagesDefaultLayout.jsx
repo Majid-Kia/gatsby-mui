@@ -6,14 +6,12 @@ import FooterSection from '../../sections/footer-section/FooterSection';
 import SubFooterSection from '../../sections/sub-footer-section/SubFooterSection';
 import React from 'react';
 import PropTypes from 'prop-types';
-import ProgressBar from '../progress-bar/ProgressBar';
 import GdprSection from '../../sections/gdpr-section/GdprSection';
 
 const PagesDefaultLayout = ({ children, addProgressBar }) => {
   return (
     <DefaultLayout>
       <NavbarSection />
-      {addProgressBar && <ProgressBar />}
       <Container>{children}</Container>
       <FooterContainer background="#001E58">
         <FooterSection />

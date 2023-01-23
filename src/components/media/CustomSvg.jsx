@@ -15,13 +15,6 @@ const CustomSvg = ({ relativePath, className }) => {
       import('../../images/' + relativePath).then((dataModule) => {
         mounted && setSvgElement(dataModule?.default);
       });
-    } else {
-      const path =
-        `${frontMatterContext.templateType}/${frontMatterContext.slug}/` +
-        relativePath;
-      import('../../content/' + path).then((dataModule) => {
-        mounted && setSvgElement(dataModule?.default);
-      });
     }
   };
 

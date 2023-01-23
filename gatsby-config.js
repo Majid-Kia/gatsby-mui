@@ -3,8 +3,8 @@ const path = require("path");
 module.exports = {
   pathPrefix: "/gatsby-mui",
   plugins: [
+    'gatsby-plugin-root-import',
     "gatsby-plugin-top-layout",
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-mui-emotion",
     {
       resolve: "gatsby-plugin-react-svg",
