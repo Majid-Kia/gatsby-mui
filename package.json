@@ -29,7 +29,7 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "GATSBY_SCREEN_WIDTH=360 gatsby build",
     "serve": "gatsby serve -H 0.0.0.0",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
