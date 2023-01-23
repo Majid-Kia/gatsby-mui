@@ -4,7 +4,7 @@ module.exports = {
   pathPrefix: "/gatsby-mui",
   plugins: [
     'gatsby-plugin-root-import',
-    "gatsby-plugin-top-layout",
+    "gatsby-plugin-material-top-layout",
     "gatsby-plugin-mui-emotion",
     {
       resolve: "gatsby-plugin-react-svg",

@@ -1,11 +1,14 @@
-import * as React from 'react';
+import React from 'react';
 import { CacheProvider } from '@emotion/react';
 import createEmotionServer from '@emotion/server/create-instance';
 import { renderToString } from 'react-dom/server';
-import getEmotionCache from './getEmotionCache';
+import { getEmotionCache } from './emotion-cache';
 
 // Inject MUI styles first to match with the prepend: true configuration.
-export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
+export const onPreRenderHTML = ({
+  getHeadComponents,
+  replaceHeadComponents,
+}) => {
   const headComponents = getHeadComponents();
   headComponents.sort((x, y) => {
     if (x.key === 'emotion-css-global' || x.key === 'emotion-css') {
@@ -19,12 +22,18 @@ export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) =>
   replaceHeadComponents(headComponents);
 };
 
-export const replaceRenderer = ({ bodyComponent, setHeadComponents, replaceBodyHTMLString }) => {
+export const replaceRenderer = ({
+  bodyComponent,
+  setHeadComponents,
+  replaceBodyHTMLString,
+}) => {
   const cache = getEmotionCache();
   const { extractCriticalToChunks } = createEmotionServer(cache);
 
   const emotionStyles = extractCriticalToChunks(
-    renderToString(<CacheProvider value={cache}>{bodyComponent}</CacheProvider>),
+    renderToString(
+      <CacheProvider value={cache}>{bodyComponent}</CacheProvider>,
+    ),
   );
 
   setHeadComponents(
