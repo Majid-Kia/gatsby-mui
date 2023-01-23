@@ -1,10 +1,10 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import {
-  ratingCount,
-  ratingValue,
-} from '../../../repository/reviews.repository';
+// import {
+//   ratingCount,
+//   ratingValue,
+// } from '../../../repository/reviews.repository';
 import CustomLink from '../../../components/link/CustomLink';
 import Rating from '@mui/material/Rating';
 
@@ -55,7 +55,7 @@ const FooterReviewPart = () => {
                   ml: 1,
                 })}
               >
-                {ratingCount} Reviews
+                {74} Reviews
               </Typography>
             </CustomLink>
             <Typography
@@ -76,14 +76,14 @@ const FooterReviewPart = () => {
                 ml: 1,
               })}
             >
-              {ratingValue} Average
+              {4.9} Average
             </Typography>
           </Grid>
 
           <Grid item height={22}>
             <Rating
               name="footer-rating"
-              value={ratingValue - naturalizer}
+              value={4.9 - naturalizer}
               precision={0.1}
               readOnly
             />
