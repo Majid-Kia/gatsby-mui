@@ -3,6 +3,13 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 // A custom theme for this app
 const theme = createTheme({
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          overflowX: 'hidden',
+        },
+      },
+    },
     MuiTypography: {
       defaultProps: {
         variantMapping: {
