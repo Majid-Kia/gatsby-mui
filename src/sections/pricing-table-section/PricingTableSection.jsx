@@ -5,7 +5,7 @@ import PricingItemsPart from './pricing-items-part/PricingItemsPart';
 import Proptypes from 'prop-types';
 import PricingData from './data/Pricing.data';
 import CustomToggleButtonGroup from '../../components/toggle-button-group/CustomToggleButtonGroup';
-import InfoIcon from '@mui/icons-material/Info';
+// import InfoIcon from '@mui/icons-material/Info';
 import togglableEnum from './enum/togglable.enum';
 import { getPageTitle } from './data/ManualPageTitleMapper.data';
 
@@ -57,6 +57,7 @@ const PricingTableSection = ({ pt, pricingDataKey, pageTitle }) => {
           pageTitle={finalPageTitle}
         />
 
+        {/* This is being commented out as requested by pm
         <Grid
           item
           xs={12}
@@ -79,7 +80,7 @@ const PricingTableSection = ({ pt, pricingDataKey, pageTitle }) => {
             Certain locations may come with lower CPU speed and 1Gbps
             connection.
           </Typography>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Grid>
   );

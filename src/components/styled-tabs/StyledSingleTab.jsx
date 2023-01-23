@@ -1,3 +1,4 @@
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Tab from '@mui/material/Tab';
 import PropTypes from 'prop-types';

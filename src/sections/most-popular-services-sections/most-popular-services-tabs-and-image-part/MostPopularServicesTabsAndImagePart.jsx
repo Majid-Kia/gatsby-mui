@@ -4,11 +4,9 @@ import MostPopularServicesImage from './MostPopularServicesImage';
 import TabAccordion from '../../../components/tab-accordion/TabAccordion';
 import TabAccordionGroupedContentIcon from '../../../components/tab-accordion/TabAccorionGroupedContentIcon';
 import MostPopularServicesDescription from './MostPopularServicesDescription';
-import { useTheme } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 
 const MostPopularServicesTabsAndImagePart = ({ data }) => {
-  const theme = useTheme();
   const itemsDescriptionList = data.map((item) => ({
     title: item.serviceDescriptionContent.title,
     body: item.serviceDescriptionContent.description,
@@ -23,7 +21,12 @@ const MostPopularServicesTabsAndImagePart = ({ data }) => {
 
     return {
       id: item.serviceName,
-      icon: <TabAccordionGroupedContentIcon iconPath={item.serviceIcon} serviceName={item.serviceName} />,
+      icon: (
+        <TabAccordionGroupedContentIcon
+          iconPath={item.serviceIcon}
+          serviceName={item.serviceName}
+        />
+      ),
       title: item.serviceName,
       descriptionNode: (
         <MostPopularServicesDescription
@@ -48,7 +51,6 @@ const MostPopularServicesTabsAndImagePart = ({ data }) => {
       <Grid item lg={8} md={12}>
         <TabAccordion
           groupedContent={groupedContent}
-          breakpoint={theme.breakpoints.values.sm}
           type="color"
           iconSize={{ width: '41px', height: '41px' }}
         />
@@ -61,17 +63,21 @@ const MostPopularServicesTabsAndImagePart = ({ data }) => {
 };
 
 MostPopularServicesTabsAndImagePart.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    details: PropTypes.arrayOf(PropTypes.shape({
-      serviceName: PropTypes.string,
-      serviceIcon: PropTypes.string,
-      serviceDescriptionContent: PropTypes.shape({
-        content: PropTypes.string,
-        description: PropTypes.string,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      details: PropTypes.arrayOf(
+        PropTypes.shape({
+          serviceName: PropTypes.string,
+          serviceIcon: PropTypes.string,
+          serviceDescriptionContent: PropTypes.shape({
+            content: PropTypes.string,
+            description: PropTypes.string,
+          }),
+        }),
+      ),
     }),
-    })),
-  })),
+  ),
 };
 
 export default MostPopularServicesTabsAndImagePart;

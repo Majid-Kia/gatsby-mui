@@ -2,7 +2,6 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import VpsDropDown from './VpsDropDown';
 import { pages } from '../data/menu.data';
-// import SignInDropDown from './SignInDropDown';
 import CustomLink from '../../../components/link/CustomLink';
 import GetStartedButton from './GetStartedButton';
 import SignInButton from './SignInButton';

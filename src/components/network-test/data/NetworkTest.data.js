@@ -46,11 +46,6 @@ module.exports = [
     remoteLink: 'https://lg-losangeles-dc03.cloudzy.com/',
   },
   {
-    type: 'residential-ip-vps',
-    title: 'Residential Ip',
-    remoteLink: 'https://lg-newyorkcity.cloudzy.com/',
-  },
-  {
     type: 'san-francisco-vps',
     title: 'San Francisco',
     remoteLink: 'https://lg-newyorkcity.cloudzy.com/',

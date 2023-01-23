@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CustomImage from '../media/CustomImage';
 import * as styles from './TabAccordionIcon.module.css';
-import Forex from '../../images/most-popular-services/forex.inline.svg';
-import Linux from '../../images/most-popular-services/linux.inline.svg';
-import Rdp from '../../images/most-popular-services/rdp.inline.svg';
-import Windows from '../../images/most-popular-services/window.inline.svg';
+import Forex from 'images/most-popular-services/forex.inline.svg';
+import Linux from 'images/most-popular-services/linux.inline.svg';
+import Rdp from 'images/most-popular-services/rdp.inline.svg';
+import Windows from 'images/most-popular-services/window.inline.svg';
 import PropType from 'prop-types';
 
 const TabAccordionGroupedContentIcon = ({ iconPath, serviceName, pngSize }) => {

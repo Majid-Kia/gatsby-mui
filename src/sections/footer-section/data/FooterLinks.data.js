@@ -383,6 +383,10 @@ module.exports = [
             link: '/netherlands-vps/',
           },
           {
+            title: 'Amsterdam VPS',
+            link: '/amsterdam-vps/',
+          },
+          {
             title: 'Germany VPS',
             link: '/germany-vps/',
           },

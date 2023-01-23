@@ -1,16 +1,15 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-// import PolymorphicOnResizeContainer from '../container/PolymorphicOnResizeContainer';
-// import TabAccordionLargeMode from './TabAccordionLargeMode';
+import PolymorphicOnResizeContainer from '../container/PolymorphicOnResizeContainer';
+import TabAccordionLargeMode from './TabAccordionLargeMode';
 import PropTypes from 'prop-types';
 import TabAccordionSmallMode from './TabAccordionSmallMode';
 
-const TabAccordion = ({ groupedContent, summarystyle, breakpoint, type, iconSize }) => {
+const TabAccordion = ({ groupedContent, summarystyle, type, iconSize }) => {
   return (
     <Grid container>
       <Grid item>
-        {/* <PolymorphicOnResizeContainer
-          breakpoint={breakpoint}
+        <PolymorphicOnResizeContainer
           largeModeComponent={
             <TabAccordionLargeMode
               tabs={groupedContent}
@@ -18,14 +17,14 @@ const TabAccordion = ({ groupedContent, summarystyle, breakpoint, type, iconSize
               type={type}
               iconSize={iconSize}
             />
-          } */}
-        {/* smallModeComponent={ */}
-        <TabAccordionSmallMode
-          type={type}
-          groupedContent={groupedContent}
+          }
+          smallModeComponent={
+            <TabAccordionSmallMode
+              type={type}
+              groupedContent={groupedContent}
+            />
+          }
         />
-        {/* }
-        /> */}
       </Grid>
     </Grid>
   );
@@ -51,8 +50,8 @@ TabAccordion.propTypes = {
   type: PropTypes.string,
   iconSize: PropTypes.shape({
     width: PropTypes.string,
-    height: PropTypes.string
-  })
+    height: PropTypes.string,
+  }),
 };
 
 export default TabAccordion;

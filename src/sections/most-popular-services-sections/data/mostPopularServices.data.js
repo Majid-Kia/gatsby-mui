@@ -1,6 +1,6 @@
 import globalVariableRepository from '../../../repository/global-variable.repository';
 
-const data = [
+export default [
   {
     serviceName: 'Windows',
     serviceIcon: 'most-popular-services/window.inline.svg',
@@ -52,7 +52,3 @@ const data = [
     },
   },
 ];
-
-
-
-export default data;

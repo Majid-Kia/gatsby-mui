@@ -10,7 +10,7 @@ export default [
         key: 'CPU',
         amount: '2',
         unit: 'vCPU',
-        name: 'highend 2.9+ Ghz',
+        name: 'highend 2.9+ GHz',
       },
       {
         key: 'Memory',
@@ -22,7 +22,7 @@ export default [
         key: 'Storage',
         amount: '30',
         unit: 'GB',
-        name: 'NVME/SSD Storage',
+        name: 'NVMe/SSD Storage',
       },
       {
         key: 'Bandwidth',
@@ -65,7 +65,7 @@ export default [
         key: 'CPU',
         amount: '2',
         unit: 'vCPU',
-        name: 'highend 2.9+ Ghz',
+        name: 'highend 2.9+ GHz',
       },
       {
         key: 'Memory',
@@ -77,7 +77,7 @@ export default [
         key: 'Storage',
         amount: '60',
         unit: 'GB',
-        name: 'NVME/SSD Storage',
+        name: 'NVMe/SSD Storage',
       },
       {
         key: 'Bandwidth',
@@ -120,7 +120,7 @@ export default [
         key: 'CPU',
         amount: '4',
         unit: 'vCPU',
-        name: 'highend 2.9+ Ghz',
+        name: 'highend 2.9+ GHz',
       },
       {
         key: 'Memory',
@@ -132,7 +132,7 @@ export default [
         key: 'Storage',
         amount: '140',
         unit: 'GB',
-        name: 'NVME/SSD Storage',
+        name: 'NVMe/SSD Storage',
       },
       {
         key: 'Bandwidth',
@@ -175,7 +175,7 @@ export default [
         key: 'CPU',
         amount: '6',
         unit: 'vCPU',
-        name: 'highend 2.9+ Ghz',
+        name: 'highend 2.9+ GHz',
       },
       {
         key: 'Memory',
@@ -187,7 +187,7 @@ export default [
         key: 'Storage',
         amount: '250',
         unit: 'GB',
-        name: 'NVME/SSD Storage',
+        name: 'NVMe/SSD Storage',
       },
       {
         key: 'Bandwidth',
@@ -232,7 +232,7 @@ export default [
         key: 'CPU',
         amount: '6',
         unit: 'vCPU',
-        name: 'highend 2.9+ Ghz',
+        name: 'highend 2.9+ GHz',
       },
       {
         key: 'Memory',
@@ -244,7 +244,7 @@ export default [
         key: 'Storage',
         amount: '250',
         unit: 'GB',
-        name: 'NVME/SSD Storage',
+        name: 'NVMe/SSD Storage',
       },
       {
         key: 'Bandwidth',
@@ -286,7 +286,7 @@ export default [
         key: 'CPU',
         amount: '8',
         unit: 'vCPU',
-        name: 'highend 2.9+ Ghz',
+        name: 'highend 2.9+ GHz',
       },
       {
         key: 'Memory',
@@ -298,7 +298,7 @@ export default [
         key: 'Storage',
         amount: '400',
         unit: 'GB',
-        name: 'NVME/SSD Storage',
+        name: 'NVMe/SSD Storage',
       },
       {
         key: 'Bandwidth',
@@ -340,7 +340,7 @@ export default [
         key: 'CPU',
         amount: '12',
         unit: 'vCPU',
-        name: 'highend 2.9+ Ghz',
+        name: 'highend 2.9+ GHz',
       },
       {
         key: 'Memory',
@@ -352,7 +352,7 @@ export default [
         key: 'Storage',
         amount: '800',
         unit: 'GB',
-        name: 'NVME/SSD Storage',
+        name: 'NVMe/SSD Storage',
       },
       {
         key: 'Bandwidth',
@@ -398,7 +398,7 @@ export default [
         key: 'CPU',
         amount: 'Custom',
         unit: '',
-        name: 'highend 2.9+ Ghz',
+        name: 'highend 2.9+ GHz',
       },
       {
         key: 'Memory',
@@ -410,7 +410,7 @@ export default [
         key: 'Storage',
         amount: 'Custom',
         unit: '',
-        name: 'NVME/SSD Storage',
+        name: 'NVMe/SSD Storage',
       },
       {
         key: 'Bandwidth',

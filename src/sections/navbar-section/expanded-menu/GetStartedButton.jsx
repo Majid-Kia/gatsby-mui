@@ -1,22 +1,28 @@
 import React from 'react';
 import CustomButton from '../../../components/button/CustomButton';
 import { getStarted } from '../data/menu.data';
+import CustomLink from '../../../components/link/CustomLink';
 
 const GetStartedButton = () => {
   return (
-    <CustomButton
-      variant="contained"
-      color="primary"
-      contentText="GET STARTED"
+    <CustomLink
       navigationObject={getStarted}
-      textSize={'buttonSmall'}
-      disableElevation
-      sx={{
-        ml: 1.5,
-        paddingX: 2,
-        paddingY: `${0.75 * 8 + 1}px`,
-      }}
-    />
+      className='getStarted'
+      targetNotBlank='true'
+    >
+      <CustomButton
+        variant="contained"
+        color="primary"
+        contentText="GET STARTED"
+        textSize={'buttonSmall'}
+        disableElevation
+        sx={{
+          ml: 1.5,
+          paddingX: 2,
+          paddingY: `${0.75 * 8 + 1}px`,
+        }}
+      />
+    </CustomLink>
   );
 };
 

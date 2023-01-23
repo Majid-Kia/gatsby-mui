@@ -6,7 +6,14 @@ export const vpsItems = [
   { name: 'RDP VPS', link: `/buy-rdp/` },
   { name: 'Forex VPS', link: `/forex-vps/` },
   { name: 'Cloud Server', link: `/cloud/` },
+  { name: 'More', link: `#` },
 ];
+
+export const moreProducts = [
+  { name: 'Mikrotik VPS', link: `/mikrotik-vps/` },
+  { name: 'Android VPS', link: `/bluestacks-vps/` },
+];
+
 export const pages = [
   { name: 'Blog', link: '/blog/' },
   { name: 'About Us', link: '/about-us/' },
@@ -31,7 +38,7 @@ export const signInContent = {
     ),
   },
   VPS_LOGIN: {
-    text: 'SIGN IN TO LEGACY PANEL',
+    text: 'SIGN IN TO WHMCS PANEL',
     remoteLink: routeUtil.normalizeWithPostfix(
       process.env.GATSBY_WHMCS_PANEL_URL,
       '/',
@@ -42,6 +49,6 @@ export const signInContent = {
   },
   SIGN_IN_PAGE: {
     text: 'sign in',
-    link: '/sign-in'
-  }
+    link: '/sign-in',
+  },
 };

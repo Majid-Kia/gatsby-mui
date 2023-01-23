@@ -1,10 +1,8 @@
-import React from "react";
-// import WindowSizeProviderContext from "../../context/WindowSizeProvider.context";
+import React from 'react';
+// import WindowSizeProviderContext from '../../context/WindowSizeProvider.context';
+import { Script } from 'gatsby';
 
-// import { Script } from "gatsby";
-// import {Helmet} from 'react-helmet-async';
-
-export default function DefaultLayout({ children }) {
+const DefaultLayout = ({ children }) => {
   // React.useEffect(() => {
   //     const timer = setTimeout(() =>
   //        setHeader(
@@ -26,7 +24,7 @@ export default function DefaultLayout({ children }) {
 
   return (
     <React.Fragment>
-      {/* <Script
+      <Script
         id="first-unique-id"
         strategy="idle"
         dangerouslySetInnerHTML={{
@@ -39,10 +37,10 @@ export default function DefaultLayout({ children }) {
             j.async = true;
             j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
             f.parentNode.insertBefore(j, f);
-          })(window, document, "script", "dataLayer", "GTM-MJ3RHZR");
+          })(window, document, "script", "dataLayer", "${process.env.GATSBY_GTAG}");
           `,
-        }} */}
-      {/* /> */}
+        }}
+      />
 
       {/* <Script
             id="first-unique-id"
@@ -56,9 +54,11 @@ export default function DefaultLayout({ children }) {
               window.dataLayer.push({ 'gtm.start': new Date().getTime(), 'event': 'gtm.js' })
             `}
           </Script> */}
-      {/* <WindowSizeProviderContext> */}
+      {/*<WindowSizeProviderContext>*/}
       {children}
-      {/* </WindowSizeProviderContext> */}
+      {/*</WindowSizeProviderContext>*/}
     </React.Fragment>
   );
-}
+};
+
+export default DefaultLayout;

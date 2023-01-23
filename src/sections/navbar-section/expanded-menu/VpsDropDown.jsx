@@ -5,10 +5,12 @@ import Typography from '@mui/material/Typography';
 import CustomDropDown from '../../../components/drop-down/CustomDropDown';
 import CustomButton from '../../../components/button/CustomButton';
 import CustomLink from '../../../components/link/CustomLink';
+import MoreProductsDropDown from './MoreProductsDropDown';
 
 const VpsDropDown = () => {
   return (
     <CustomDropDown
+      notCloseOnClickOnMenuItem
       buttonChild={
         <CustomButton
           variant={'text'}
@@ -25,6 +27,9 @@ const VpsDropDown = () => {
         ></CustomButton>
       }
       menuChildren={vpsItems.map((item) => {
+        if (item.name === 'More')
+          return <MoreProductsDropDown />;
+        else
         return (
           <CustomLink
             className="navbarLink"

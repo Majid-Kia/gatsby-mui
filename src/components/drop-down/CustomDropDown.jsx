@@ -60,9 +60,12 @@ const CustomDropDown = ({
   );
 };
 
-CustomDropDown.prototype = {
+CustomDropDown.propTypes = {
   buttonChild: PropTypes.element,
-  menuChildren: PropTypes.element,
+  menuChildren: PropTypes.oneOfType(
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+  ),
   menuItemProps: PropTypes.object,
   menuSx: PropTypes.object,
   anchorOrigin: PropTypes.object,

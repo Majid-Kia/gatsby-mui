@@ -29,52 +29,52 @@ const JoinAction = () => {
 
 const WhyChooseSection = () => {
   return (
-    <Grid
-      container
-      sx={{ py: 12.5 }}
-      justifyContent={{
-        lg: 'space-between',
-        md: 'center',
-        sm: 'center',
-        xs: 'flex-end',
-      }}
-    >
       <Grid
-        item
-        lg={6}
-        md={12}
-        sm={12}
-        xs={12}
-        justifySelf={{
-          md: 'flex-start',
-          sm: 'flex-start',
-          xs: 'flex-start',
+        container
+        sx={{ py: 12.5 }}
+        justifyContent={{
+          lg: 'space-between',
+          md: 'center',
+          sm: 'center',
+          xs: 'flex-end',
         }}
       >
-        <Typography
-          variant="h2"
-          marginBottom={{ lg: 4.5, md: 4, sm: 2, xs: 2 }}
+        <Grid
+          item
+          lg={6}
+          md={12}
+          sm={12}
+          xs={12}
+          justifySelf={{
+            md: 'flex-start',
+            sm: 'flex-start',
+            xs: 'flex-start',
+          }}
         >
-          {headingData.title}
-        </Typography>
+          <Typography
+            variant="h2"
+            marginBottom={{ lg: 4.5, md: 4, sm: 2, xs: 2 }}
+          >
+            {headingData.title}
+          </Typography>
+        </Grid>
+        <Grid
+          item
+          lg={6}
+          order={{ lg: 2, md: 3, sm: 3, xs: 3 }}
+          textAlign="right"
+        >
+          <JoinAction />
+        </Grid>
+        <Grid
+          item
+          lg={12}
+          order={{ md: 2, sm: 2, xs: 2 }}
+          marginBottom={{ lg: 7, md: 6, sm: 5, xs: 1 }}
+        >
+          <WhyChooseIconBox IconBoxDataList={whyChooseIconBoxData} />
+        </Grid>
       </Grid>
-      <Grid
-        item
-        lg={6}
-        order={{ lg: 2, md: 3, sm: 3, xs: 3 }}
-        textAlign="right"
-      >
-        <JoinAction />
-      </Grid>
-      <Grid
-        item
-        lg={12}
-        order={{ md: 2, sm: 2, xs: 2 }}
-        marginBottom={{ lg: 7, md: 6, sm: 5, xs: 1 }}
-      >
-        <WhyChooseIconBox IconBoxDataList={whyChooseIconBoxData} />
-      </Grid>
-    </Grid>
   );
 };
 

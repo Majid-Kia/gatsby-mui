@@ -7,7 +7,7 @@ import React from 'react';
 
 const PerformanceFeaturesListInLargeMode = () => {
   return (
-    <Box position="relative" top={{ lg: -130, md: -130, sm: -130 }}>
+    <Box position="relative" top={{ lg: -130, md: -130, sm: -130, xs: 0 }}>
       <Card
         sx={{
           boxShadow: (theme) => theme.shadows['2'],
@@ -15,7 +15,14 @@ const PerformanceFeaturesListInLargeMode = () => {
       >
         <Grid container m={1}>
           {features.map((item, index) => (
-            <Grid item lg={item.size} md={item.size} sm={item.size} key={index}>
+            <Grid
+              item
+              lg={item.size}
+              md={item.size}
+              sm={item.size}
+              xs={6}
+              key={index}
+            >
               <PerformanceFeatureElement
                 title={item.subtitle}
                 description={item.description}
