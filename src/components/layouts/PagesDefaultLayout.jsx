@@ -12,13 +12,13 @@ const PagesDefaultLayout = ({ children, addProgressBar }) => {
   return (
     <DefaultLayout>
       <NavbarSection />
-      <Container>{children}</Container>
+      {/* <Container>{children}</Container>
       <FooterContainer background="#001E58">
         <FooterSection />
       </FooterContainer>
       <FooterContainer background="#001642">
         <SubFooterSection />
-      </FooterContainer>
+      </FooterContainer> */}
       <GdprSection />
     </DefaultLayout>
   );
