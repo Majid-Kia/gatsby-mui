@@ -8,7 +8,7 @@ import React from "react";
 // import FullWidthContainer from "../components/container/FullWidthContainer";
 // import WhyChooseSection from "../sections/why-choose-section/WhyChooseSection";
 // import MapSection from "../sections/map-section/MapSection";
-import PagesDefaultLayout from "../components/layouts/PagesDefaultLayout";
+// import PagesDefaultLayout from "../components/layouts/PagesDefaultLayout";
 // import PricingTableSection from "../sections/pricing-table-section/PricingTableSection";
 // import mostPopularServicesData from "../sections/most-popular-services-sections/data/mostPopularServices.data";
 // import MostPopularServicesSection from "../sections/most-popular-services-sections/MostPopularServicesSection";
@@ -20,8 +20,8 @@ import PagesDefaultLayout from "../components/layouts/PagesDefaultLayout";
 export default function Index() {
   const pt = { xl: 18.75, lg: 18.75, md: 15, sm: 12.5, xs: 12.5 };
   return (
-    <PagesDefaultLayout>
-      {/* <HomeHeroSection mt={{ lg: 0, md: 12, sm: 8, xs: 3 }} />
+    // <PagesDefaultLayout>
+    {/* <HomeHeroSection mt={{ lg: 0, md: 12, sm: 8, xs: 3 }} />
       <PricingTableSection
         pt={pt}
         pricingDataKey={"WINDOWS_VS_LINUX"}
@@ -40,6 +40,6 @@ export default function Index() {
       />
       <TestimonialSection pt={pt} testimonialIds={[1, 2, 4, 5]} />
       <PricingCtaSection pt={pt} data={PricingCtaTempData} /> */}
-    </PagesDefaultLayout>
+    // </PagesDefaultLayout>
   );
 }
