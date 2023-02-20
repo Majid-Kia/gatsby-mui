@@ -24,7 +24,7 @@ const DefaultLayout = ({ children }) => {
 
   return (
     <React.Fragment>
-      <Script
+      {/* <Script
         id="first-unique-id"
         strategy="idle"
         dangerouslySetInnerHTML={{
@@ -40,7 +40,7 @@ const DefaultLayout = ({ children }) => {
           })(window, document, "script", "dataLayer", "${process.env.GATSBY_GTAG}");
           `,
         }}
-      />
+      /> */}
 
       {/* <Script
             id="first-unique-id"

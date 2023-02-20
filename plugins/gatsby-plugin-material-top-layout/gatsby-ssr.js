@@ -61,16 +61,16 @@ const fontLinks = [
     crossOrigin="anonymous"
     key="Monoid-Regular"
   />,
-  // <link
-  //   rel="preconnect"
-  //   href="https://www.googletagmanager.com"
-  //   crossOrigin="true"
-  // />,
-  // <link
-  //   rel="dns-prefetch"
-  //   key="dns-prefetch-google-gtag"
-  //   href={'https://www.googletagmanager.com'}
-  // />,
+  <link
+    rel="preconnect"
+    href="https://www.googletagmanager.com"
+    crossOrigin="true"
+  />,
+  <link
+    rel="dns-prefetch"
+    key="dns-prefetch-google-gtag"
+    href={'https://www.googletagmanager.com'}
+  />,
   <link
     rel="preconnect"
     href="https://www.google-analytics.com"
