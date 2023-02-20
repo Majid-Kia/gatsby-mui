@@ -21,7 +21,7 @@ export default function Index() {
   const pt = { xl: 18.75, lg: 18.75, md: 15, sm: 12.5, xs: 12.5 };
   return (
     // <PagesDefaultLayout>
-    {/* <HomeHeroSection mt={{ lg: 0, md: 12, sm: 8, xs: 3 }} />
+    /* <HomeHeroSection mt={{ lg: 0, md: 12, sm: 8, xs: 3 }} />
       <PricingTableSection
         pt={pt}
         pricingDataKey={"WINDOWS_VS_LINUX"}
@@ -39,7 +39,8 @@ export default function Index() {
         data={mostPopularServicesData}
       />
       <TestimonialSection pt={pt} testimonialIds={[1, 2, 4, 5]} />
-      <PricingCtaSection pt={pt} data={PricingCtaTempData} /> */}
+      <PricingCtaSection pt={pt} data={PricingCtaTempData} /> */
     // </PagesDefaultLayout>
+    'hi'
   );
 }
