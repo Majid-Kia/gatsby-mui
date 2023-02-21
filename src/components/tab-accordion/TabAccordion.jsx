@@ -9,22 +9,11 @@ const TabAccordion = ({ groupedContent, summarystyle, type, iconSize }) => {
   return (
     <Grid container>
       <Grid item>
-        <PolymorphicOnResizeContainer
-          largeModeComponent={
-            <TabAccordionLargeMode
-              tabs={groupedContent}
-              summarystyle={summarystyle}
-              type={type}
-              iconSize={iconSize}
-            />
-          }
-          smallModeComponent={
-            <TabAccordionSmallMode
-              type={type}
-              groupedContent={groupedContent}
-            />
-          }
+        <TabAccordionSmallMode
+          type={type}
+          groupedContent={groupedContent}
         />
+
       </Grid>
     </Grid>
   );

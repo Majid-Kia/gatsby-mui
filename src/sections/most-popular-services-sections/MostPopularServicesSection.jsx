@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-// import MostPopularServicesTabsAndImagePart from './most-popular-services-tabs-and-image-part/MostPopularServicesTabsAndImagePart';
+import MostPopularServicesTabsAndImagePart from './most-popular-services-tabs-and-image-part/MostPopularServicesTabsAndImagePart';
 import PropTypes from 'prop-types';
 
 const MostPopularServicesSection = ({ pt, title, data }) => {
@@ -21,7 +21,7 @@ const MostPopularServicesSection = ({ pt, title, data }) => {
         </Typography>
       </Grid>
       <Grid item xs={12} mt={4}>
-        {/* <MostPopularServicesTabsAndImagePart data={data} /> */}
+        <MostPopularServicesTabsAndImagePart data={data} />
       </Grid>
     </Grid>
   );
