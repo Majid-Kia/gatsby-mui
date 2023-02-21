@@ -25,7 +25,7 @@ export default function FooterAccordion({ links }) {
               borderColor: theme.palette.grey['A100'],
             })}
           >
-            <StyledFooterAccordion>
+            {/* <StyledFooterAccordion>
               <StyledFooterAccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -53,7 +53,7 @@ export default function FooterAccordion({ links }) {
                   </AccordionDetails>
                 );
               })}
-            </StyledFooterAccordion>
+            </StyledFooterAccordion> */}
           </Grid>
         );
       })}
