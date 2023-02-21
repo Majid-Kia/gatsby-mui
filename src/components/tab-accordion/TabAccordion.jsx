@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import PolymorphicOnResizeContainer from '../container/PolymorphicOnResizeContainer';
-import TabAccordionLargeMode from './TabAccordionLargeMode';
+// import PolymorphicOnResizeContainer from '../container/PolymorphicOnResizeContainer';
+// import TabAccordionLargeMode from './TabAccordionLargeMode';
 import PropTypes from 'prop-types';
 import TabAccordionSmallMode from './TabAccordionSmallMode';
 
