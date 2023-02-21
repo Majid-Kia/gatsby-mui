@@ -5,9 +5,9 @@ import React from "react";
 // import ProTip from '../components/ProTip';
 // import Link from '../components/Link';
 // import Copyright from '../components/Copyright';
-// import FullWidthContainer from "../components/container/FullWidthContainer";
-// import WhyChooseSection from "../sections/why-choose-section/WhyChooseSection";
-import MapSection from "../sections/map-section/MapSection";
+import FullWidthContainer from "../components/container/FullWidthContainer";
+import WhyChooseSection from "../sections/why-choose-section/WhyChooseSection";
+// import MapSection from "../sections/map-section/MapSection";
 import PagesDefaultLayout from "../components/layouts/PagesDefaultLayout";
 // import PricingTableSection from "../sections/pricing-table-section/PricingTableSection";
 // import mostPopularServicesData from "../sections/most-popular-services-sections/data/mostPopularServices.data";
@@ -28,10 +28,10 @@ export default function Index() {
         pageTitle={"Cloud VPS"}
       /> */}
 
-      {/* <FullWidthContainer pt={pt}>
+      <FullWidthContainer pt={pt}>
         <WhyChooseSection />
-      </FullWidthContainer> */}
-      <MapSection pt={pt} />
+      </FullWidthContainer>
+      {/* <MapSection pt={pt} /> */}
       {/* 
       <MostPopularServicesSection
         pt={pt}
