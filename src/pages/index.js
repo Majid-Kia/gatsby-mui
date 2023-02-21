@@ -10,8 +10,8 @@ import React from "react";
 // import MapSection from "../sections/map-section/MapSection";
 import PagesDefaultLayout from "../components/layouts/PagesDefaultLayout";
 // import PricingTableSection from "../sections/pricing-table-section/PricingTableSection";
-import mostPopularServicesData from "../sections/most-popular-services-sections/data/mostPopularServices.data";
-import MostPopularServicesSection from "../sections/most-popular-services-sections/MostPopularServicesSection";
+// import mostPopularServicesData from "../sections/most-popular-services-sections/data/mostPopularServices.data";
+// import MostPopularServicesSection from "../sections/most-popular-services-sections/MostPopularServicesSection";
 // import TestimonialSection from "../sections/testimonial-section/TestimonialSection";
 // import PricingCtaSection from "../sections/pricing-cta-section/PricingCtaSection";
 // import PricingCtaTempData from "../sections/pricing-cta-section/data/pricingCtaDescription.data";
@@ -33,11 +33,11 @@ export default function Index() {
       </FullWidthContainer> */}
       {/* <MapSection pt={pt} /> */}
 
-      <MostPopularServicesSection
+      {/* <MostPopularServicesSection
         pt={pt}
         title="Our Most Popular Services"
         data={mostPopularServicesData}
-      />
+      /> */}
       {/* <TestimonialSection pt={pt} testimonialIds={[1, 2, 4, 5]} /> */}
       {/* <PricingCtaSection pt={pt} data={PricingCtaTempData} /> */}
     </PagesDefaultLayout>
