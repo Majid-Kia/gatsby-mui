@@ -37,13 +37,13 @@ export default function FooterAccordion({ links }) {
               {link.items.map((element, index) => {
                 return (
                   <div key={index}>
-                    <CustomLink className="footerLink" navigationObject={{ link: element.link }}>
+                    <div>
                       <Typography variant='body2' sx={(theme) => ({
                         color: theme.palette.grey['A400']
                       })}>
                         {element.title}
                       </Typography>
-                    </CustomLink>
+                    </div>
                   </div>
                 );
               })}
