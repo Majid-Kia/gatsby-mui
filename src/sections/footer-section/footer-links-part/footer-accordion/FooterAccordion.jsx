@@ -1,6 +1,5 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Grid from '@mui/material/Grid';
 import PropTypes from 'prop-types';
 import CustomLink from '../../../../components/link/CustomLink';
@@ -24,9 +23,7 @@ export default function FooterAccordion({ links }) {
           >
             <div>
               <div
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
+
               >
                 <Typography
                   variant="subtitle1"
