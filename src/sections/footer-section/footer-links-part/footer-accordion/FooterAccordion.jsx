@@ -1,9 +1,6 @@
 import React from 'react';
-import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import StyledFooterAccordion from './StyledFooterAccordion';
-import StyledFooterAccordionSummary from './StyledFooterAccordionSummary';
 import Grid from '@mui/material/Grid';
 import PropTypes from 'prop-types';
 import CustomLink from '../../../../components/link/CustomLink';
@@ -25,8 +22,8 @@ export default function FooterAccordion({ links }) {
               borderColor: theme.palette.grey['A100'],
             })}
           >
-            {/* <StyledFooterAccordion>
-              <StyledFooterAccordionSummary
+            <div>
+              <div
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
@@ -39,10 +36,10 @@ export default function FooterAccordion({ links }) {
                 >
                   {link.title}
                 </Typography>
-              </StyledFooterAccordionSummary>
+              </div>
               {link.items.map((element, index) => {
                 return (
-                  <AccordionDetails key={index}>
+                  <div key={index}>
                     <CustomLink className="footerLink" navigationObject={{ link: element.link }}>
                       <Typography variant='body2' sx={(theme) => ({
                         color: theme.palette.grey['A400']
@@ -50,10 +47,10 @@ export default function FooterAccordion({ links }) {
                         {element.title}
                       </Typography>
                     </CustomLink>
-                  </AccordionDetails>
+                  </div>
                 );
               })}
-            </StyledFooterAccordion> */}
+            </div>
           </Grid>
         );
       })}
