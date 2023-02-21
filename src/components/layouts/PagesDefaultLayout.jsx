@@ -1,5 +1,5 @@
 import DefaultLayout from './DefaultLayout';
-// import NavbarSection from '../../sections/navbar-section/NavbarSection';
+import NavbarSection from '../../sections/navbar-section/NavbarSection';
 import Container from '../container/CustomizedContainer';
 // import FooterContainer from '../container/FooterContainer';
 // import FooterSection from '../../sections/footer-section/FooterSection';
@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 const PagesDefaultLayout = ({ children, addProgressBar }) => {
   return (
     <DefaultLayout>
-      {/* <NavbarSection /> */}
+      <NavbarSection />
       <Container>{children}</Container>
       {/* <FooterContainer background="#001E58">
         <FooterSection />
