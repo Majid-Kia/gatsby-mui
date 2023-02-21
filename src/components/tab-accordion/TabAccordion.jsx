@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-// import PolymorphicOnResizeContainer from '../container/PolymorphicOnResizeContainer';
-// import TabAccordionLargeMode from './TabAccordionLargeMode';
+import PolymorphicOnResizeContainer from '../container/PolymorphicOnResizeContainer';
+import TabAccordionLargeMode from './TabAccordionLargeMode';
 import PropTypes from 'prop-types';
 import TabAccordionSmallMode from './TabAccordionSmallMode';
 
@@ -9,11 +9,22 @@ const TabAccordion = ({ groupedContent, summarystyle, type, iconSize }) => {
   return (
     <Grid container>
       <Grid item>
-        <TabAccordionSmallMode
-          type={type}
-          groupedContent={groupedContent}
+        <PolymorphicOnResizeContainer
+          largeModeComponent={
+            <TabAccordionLargeMode
+              tabs={groupedContent}
+              summarystyle={summarystyle}
+              type={type}
+              iconSize={iconSize}
+            />
+          }
+          smallModeComponent={
+            <TabAccordionSmallMode
+              type={type}
+              groupedContent={groupedContent}
+            />
+          }
         />
-
       </Grid>
     </Grid>
   );
