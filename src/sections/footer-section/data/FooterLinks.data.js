@@ -96,77 +96,37 @@ module.exports = [
             title: 'OpenSUSE VPS',
             link: '/opensuse-vps/',
           },
-
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Products',
-    items: [
-      {
-        title: 'Buy VPS',
-        link: '/buy-vps/',
-      },
-      {
-        title: 'Buy RDP',
-        link: '/buy-rdp/',
-      },
-      {
-        title: 'Game VPS',
-        link: '/game-vps/',
-      },
-      {
-        title: 'SSD VPS',
-        link: '/cheap-ssd-vps/',
-      },
-      {
-        title: 'WordPress VPS',
-        link: '/wordpress-vps/',
-      },
-      {
-        title: 'Forex VPS',
-        link: '/forex-vps/',
-      },
-      {
-        title: 'TeamSpeak VPS',
-        link: '/teamspeak-vps/',
-      },
-      {
-        title: 'Anonymous VPS',
-        link: '/anonymous-vps/',
-      },
-      {
-        title: 'Bitcoin VPS',
-        link: '/bitcoin-vps/',
-      },
-      {
-        title: 'More',
-        isCollapse: true,
-        items: [
           {
-            title: 'KVM VPS',
-            link: '/kvm-vps/',
+            title: 'Slackware VPS',
+            link: '/slackware-vps/',
           },
           {
-            title: 'Credit Card VPS',
-            link: '/buy-vps-with-credit-card/',
+            title: 'Scientific Linux VPS',
+            link: '/scientific-linux-vps/',
           },
           {
-            title: 'DirectAdmin VPS',
-            link: '/directadmin-vps/',
+            title: 'Fedora VPS',
+            link: '/fedora-vps/',
           },
           {
-            title: 'cPanel VPS',
-            link: '/cpanel-vps/',
+            title: 'Arch Linux VPS',
+            link: '/arch-linux-vps/',
           },
           {
-            title: 'Plesk VPS',
-            link: '/plesk-vps/',
+            title: 'Linux Mint VPS',
+            link: '/linux-mint-vps/',
           },
           {
-            title: 'PayPal VPS',
-            link: '/paypal-vps/',
+            title: 'CloudLinux VPS',
+            link: '/cloudlinux-vps/',
+          },
+          {
+            title: 'AlmaLinux VPS',
+            link: '/almalinux-vps/',
+          },
+          {
+            title: 'Rocky Linux VPS',
+            link: '/rocky-linux-vps/',
           },
         ],
       },
@@ -183,7 +143,18 @@ module.exports = [
         title: 'Best RDP Provider',
         link: '/best-rdp-provider/',
       },
-
+      {
+        title: 'Best Linux VPS',
+        link: '/best-linux-vps/',
+      },
+      {
+        title: 'How to order a VPS',
+        link: '/blog/how-to-order-a-vps/',
+      },
+      {
+        title: 'How to Pick the Best VPS',
+        link: '/best-vps/',
+      },
     ],
   },
   {
@@ -205,7 +176,26 @@ module.exports = [
         title: 'FAQ',
         link: '/faq/',
       },
-
+      {
+        title: 'Blog',
+        link: '/blog/',
+      },
+      {
+        title: 'Customer Reviews',
+        link: '/vps-reviews/',
+      },
+      {
+        title: 'Money-back Guarantee',
+        link: '/money-back-guarantee/',
+      },
+      {
+        title: 'Privacy Policy',
+        link: '/privacy-policy/',
+      },
+      {
+        title: 'Terms of Service',
+        link: '/terms-of-service/',
+      },
     ],
   },
 ];
