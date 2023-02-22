@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import FooterLinksData from '../../data/FooterLinks.data';
+// import FooterLinksData from '../../data/FooterLinks.data';
 import FooterLinksTitle from './FooterLinksTitle';
 import FooterColumnValue from './FooterColumnValue';
 import PropTypes from 'prop-types';
@@ -8,9 +8,9 @@ import PropTypes from 'prop-types';
 const FooterColumn = ({ column }) => {
   return (
     <React.Fragment>
-      <FooterLinksTitle title={column.title} />
+      <FooterLinksTitle title={column.FooterLinkTitle} />
       <Grid container flexDirection="column">
-        {column.items.map((columnValue) => {
+        {column.FooterLinkItems.map((columnValue) => {
           return (
             <Grid item key={columnValue.title}>
               <FooterColumnValue columnValue={columnValue} />
@@ -41,13 +41,13 @@ FooterColumn.propTypes = {
   }),
 };
 
-const FooterLargeMode = () => {
+const FooterLargeMode = ({ FooterLinksData }) => {
   return (
     <Grid container spacing={4} justifyContent="space-between">
       {FooterLinksData.map((column) => {
         return (
-          <Grid item key={column.title}>
-            <FooterColumn column={column} />
+          <Grid item key={column.node.title}>
+            <FooterColumn column={column.node} />
           </Grid>
         );
       })}

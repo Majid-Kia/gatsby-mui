@@ -64,6 +64,7 @@ const fontLinks = [
   <link
     rel="preconnect"
     href="https://www.googletagmanager.com"
+    key={'pre-connect-google-tag'}
     crossOrigin="true"
   />,
   <link
@@ -74,6 +75,7 @@ const fontLinks = [
   <link
     rel="preconnect"
     href="https://www.google-analytics.com"
+    key={'pre-connect-google-analytics'}
     crossOrigin="true"
   />,
   <link
@@ -84,6 +86,7 @@ const fontLinks = [
   <link
     rel="preconnect"
     href="https://www.googleoptimize.com"
+    key={'pre-connect-google-optimize'}
     crossOrigin="true"
   />,
   <link
@@ -94,6 +97,7 @@ const fontLinks = [
   <link
     rel="preconnect"
     href="https://www.googleadservices.com"
+    key={'pre-connect-google-ads-service'}
     crossOrigin="true"
   />,
   <link
@@ -102,8 +106,20 @@ const fontLinks = [
     href={'https://www.googleadservices.com'}
   />,
   <link
+    rel="preconnect"
+    href="https://www.clarity.ms"
+    key={'pre-connect-clarity-service'}
+    crossOrigin="true"
+  />,
+  <link
+    rel="dns-prefetch"
+    key="dns-prefetch-clarity-service"
+    href={'https://www.clarity.ms'}
+  />,
+  <link
     rel="icon"
     type="image/png"
+    key={'favicon'}
     href={`${process.env.GATSBY_SITE_URL}/favicon.png`}
   />,
 ];
@@ -118,7 +134,7 @@ export const onRenderBody = ({
 
   const noRobotsLink =
     process.env.GATSBY_ENVIRONMENT !== 'PRODUCTION'
-      ? [<meta name="robots" content="noindex, nofollow" />]
+      ? [<meta name="robots" content="noindex, nofollow" key={'robots'} />]
       : [];
 
   if (helmet) {
@@ -184,3 +200,4 @@ export const wrapRootElement = ({ element, pathname }) => {
     </HelmetProvider>
   );
 };
+

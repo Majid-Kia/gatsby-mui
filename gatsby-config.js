@@ -2,9 +2,20 @@ const path = require("path");
 
 module.exports = {
   pathPrefix: "/gatsby-mui",
+  flags: {
+    DEV_SSR: true,
+    FAST_DEV: true,
+  },
   plugins: [
     'gatsby-plugin-root-import',
     "gatsby-plugin-material-top-layout",
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     "gatsby-plugin-mui-emotion",
     {
       resolve: "gatsby-plugin-react-svg",
@@ -27,6 +38,7 @@ module.exports = {
         },
       },
     },
+
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",

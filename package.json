@@ -1,39 +1,41 @@
 {
-  "name": "gatsby",
-  "version": "5.0.0",
-  "private": true,
-  "browserslist": [
-    ">0.25%",
-    "not dead"
-  ],
-  "dependencies": {
-    "@emotion/react": "latest",
-    "@emotion/server": "latest",
-    "@emotion/styled": "latest",
-    "@mui/icons-material": "^5.11.0",
-    "@mui/material": "latest",
-    "gatsby": "latest",
-    "gatsby-plugin-image": "^3.4.0",
-    "gatsby-plugin-react-svg": "^3.3.0",
-    "gatsby-plugin-root-import": "^2.0.9",
-    "gatsby-plugin-sharp": "^5.4.0",
-    "gatsby-source-filesystem": "^5.4.0",
-    "gatsby-transformer-sharp": "^5.4.0",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-helmet": "latest",
-    "react-helmet-async": "^1.3.0",
-    "react-slick": "^0.29.0",
-    "react-svg": "^16.0.0",
-    "slick-carousel": "^1.8.1"
-  },
-  "scripts": {
-    "develop": "gatsby develop",
-    "build": "GATSBY_SCREEN_WIDTH=360 gatsby build",
-    "serve": "gatsby serve -H 0.0.0.0",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
+    "name": "gatsby",
+    "version": "5.0.0",
+    "private": true,
+    "browserslist": [
+        ">0.25%",
+        "not dead"
+    ],
+    "dependencies": {
+        "@emotion/react": "latest",
+        "@emotion/server": "latest",
+        "@emotion/styled": "latest",
+        "@mui/icons-material": "^5.11.0",
+        "@mui/material": "latest",
+        "gatsby": "latest",
+        "gatsby-plugin-image": "^3.4.0",
+        "gatsby-plugin-react-svg": "^3.3.0",
+        "gatsby-plugin-root-import": "^2.0.9",
+        "gatsby-plugin-sharp": "^5.4.0",
+        "gatsby-source-filesystem": "^5.4.0",
+        "gatsby-transformer-json": "^5.7.0",
+        "gatsby-transformer-sharp": "^5.4.0",
+        "react": "latest",
+        "react-dom": "latest",
+        "react-helmet": "latest",
+        "react-helmet-async": "^1.3.0",
+        "react-slick": "^0.29.0",
+        "react-svg": "^16.0.0",
+        "slick-carousel": "^1.8.1"
+    },
+    "scripts": {
+        "develop": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve -H 0.0.0.0",
+        "clean": "gatsby clean",
+        "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    },
+    "devDependencies": {
+        "gh-pages": "^4.0.0"
+    }
 }
