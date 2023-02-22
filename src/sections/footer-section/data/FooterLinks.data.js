@@ -14,46 +14,6 @@ module.exports = [
             title: 'Windows 7 VPS',
             link: '/windows-7-vps/',
           },
-          {
-            title: 'Windows 8 VPS',
-            link: '/windows-8-vps/',
-          },
-          {
-            title: 'Windows 10 VPS',
-            link: '/windows-10-vps/',
-          },
-          {
-            title: 'Windows 11 VPS',
-            link: '/windows-11-vps/',
-          },
-          {
-            title: 'Windows 2003 VPS',
-            link: '/windows-2003-vps/',
-          },
-          {
-            title: 'Windows 2008 VPS',
-            link: '/windows-2008-vps/',
-          },
-          {
-            title: 'Windows 2012 VPS',
-            link: '/windows-2012-vps/',
-          },
-          {
-            title: 'Windows 2016 VPS',
-            link: '/windows-2016-vps/',
-          },
-          {
-            title: 'Windows 2019 VPS',
-            link: '/windows-2019-vps/',
-          },
-          {
-            title: 'Windows 2022 VPS',
-            link: '/windows-2022-vps/',
-          },
-          {
-            title: 'Windows VPS',
-            link: '/windows-vps/',
-          },
         ],
       },
       {
@@ -84,49 +44,99 @@ module.exports = [
             title: 'Cheap Linux VPS',
             link: '/linux-vps/',
           },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Products',
+    items: [
+      {
+        title: 'Buy VPS',
+        link: '/buy-vps/',
+      },
+      {
+        title: 'Buy RDP',
+        link: '/buy-rdp/',
+      },
+      {
+        title: 'Game VPS',
+        link: '/game-vps/',
+      },
+      {
+        title: 'SSD VPS',
+        link: '/cheap-ssd-vps/',
+      },
+      {
+        title: 'More',
+        isCollapse: true,
+        items: [
           {
-            title: 'Gentoo VPS',
-            link: '/gentoo-vps/',
+            title: 'KVM VPS',
+            link: '/kvm-vps/',
           },
           {
-            title: 'ClearOS VPS',
-            link: '/clearos-vps/',
+            title: 'Credit Card VPS',
+            link: '/buy-vps-with-credit-card/',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Locations',
+    items: [
+      {
+        title: 'USA',
+        isCollapse: true,
+        items: [
+          {
+            title: 'USA VPS',
+            link: '/usa-vps/',
           },
           {
-            title: 'OpenSUSE VPS',
-            link: '/opensuse-vps/',
+            title: 'Seattle VPS',
+            link: '/seattle-vps/',
           },
           {
-            title: 'Slackware VPS',
-            link: '/slackware-vps/',
+            title: 'Miami VPS',
+            link: '/miami-vps/',
           },
           {
-            title: 'Scientific Linux VPS',
-            link: '/scientific-linux-vps/',
+            title: 'Phoenix VPS',
+            link: '/phoenix-vps/',
+          },
+        ],
+      },
+      {
+        title: 'Asia',
+        isCollapse: true,
+        items: [
+          {
+            title: 'Asia VPS',
+            link: '/asia-vps/',
           },
           {
-            title: 'Fedora VPS',
-            link: '/fedora-vps/',
+            title: 'Singapore VPS',
+            link: '/singapore-vps/',
+          },
+        ],
+      },
+      {
+        title: 'Europe',
+        isCollapse: true,
+        items: [
+          {
+            title: 'Europe VPS',
+            link: '/europe-vps/',
           },
           {
-            title: 'Arch Linux VPS',
-            link: '/arch-linux-vps/',
+            title: 'UK VPS',
+            link: '/uk-vps/',
           },
           {
-            title: 'Linux Mint VPS',
-            link: '/linux-mint-vps/',
-          },
-          {
-            title: 'CloudLinux VPS',
-            link: '/cloudlinux-vps/',
-          },
-          {
-            title: 'AlmaLinux VPS',
-            link: '/almalinux-vps/',
-          },
-          {
-            title: 'Rocky Linux VPS',
-            link: '/rocky-linux-vps/',
+            title: 'London VPS',
+            link: '/london-vps/',
           },
         ],
       },
@@ -175,26 +185,6 @@ module.exports = [
       {
         title: 'FAQ',
         link: '/faq/',
-      },
-      {
-        title: 'Blog',
-        link: '/blog/',
-      },
-      {
-        title: 'Customer Reviews',
-        link: '/vps-reviews/',
-      },
-      {
-        title: 'Money-back Guarantee',
-        link: '/money-back-guarantee/',
-      },
-      {
-        title: 'Privacy Policy',
-        link: '/privacy-policy/',
-      },
-      {
-        title: 'Terms of Service',
-        link: '/terms-of-service/',
       },
     ],
   },

@@ -22,6 +22,22 @@ export default [
     items: flattenData(FooterLinks[0].items[1].items),
   },
   {
+    title: 'Products',
+    items: flattenData(FooterLinks[1].items),
+  },
+  {
+    title: 'USA Locations',
+    items: flattenData(FooterLinks[2].items[0].items),
+  },
+  {
+    title: 'Asia Locations',
+    items: flattenData(FooterLinks[2].items[1].items),
+  },
+  {
+    title: 'Europe Locations',
+    items: flattenData(FooterLinks[2].items[2].items),
+  },
+  {
     title: 'Resources',
     items: flattenData(FooterLinks[3].items),
   },
