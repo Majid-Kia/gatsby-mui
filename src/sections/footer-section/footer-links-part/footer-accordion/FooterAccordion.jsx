@@ -3,11 +3,11 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import PropTypes from 'prop-types';
 import CustomLink from '../../../../components/link/CustomLink';
-
 export default function FooterAccordion({ links }) {
   return (
     <Grid container>
       {links.map((link) => {
+        console.log(444444, link)
         return (
           <Grid
             key={link.title}
@@ -34,7 +34,7 @@ export default function FooterAccordion({ links }) {
                   {link.title}
                 </Typography>
               </div>
-              {link.items.map((element, index) => {
+              {link.node.FooterLinkItems.map((element, index) => {
                 return (
                   <div key={index}>
                     <div>
